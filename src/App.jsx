@@ -4,7 +4,7 @@ import './App.css'
 function App() {
 
   // Password info states
-  const [length, setLength] = useState(8);
+  const [length, setLength] = useState(12);
   const [numsAllowed, setNumsAllowed] = useState(true);
   const [charsAllowed, setCharsAllowed] = useState(true);
 
@@ -79,8 +79,8 @@ function App() {
             <input 
               type="range" 
               className='cursor-pointer'
-              min={8} 
-              max={20} 
+              min={10} 
+              max={30} 
               value={length} 
               id="length"
               onChange={(e) => setLength(e.target.value)} 
